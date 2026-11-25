@@ -1,0 +1,13 @@
+/* @theme bright-room */
+@import "base";
+
+:root {
+  --slide-background: #ffffff;
+  --slide-text: #000000;
+  --accent: #003f88;
+  --muted-text: #333333;
+  --plot-background: #ffffff;
+  --plot-grid: #a0a0a0;
+  --plot-text: #000000;
+  --plot-text-size: 22px;
+}

@@ -1,0 +1,13 @@
+/* @theme dark-room */
+@import "base";
+
+:root {
+  --slide-background: #111827;
+  --slide-text: #e5eef7;
+  --accent: #67e8f9;
+  --muted-text: #a7b6c6;
+  --plot-background: #172033;
+  --plot-grid: #405069;
+  --plot-text: #f5f9fc;
+  --plot-text-size: 18px;
+}

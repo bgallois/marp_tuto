@@ -1,0 +1,20 @@
+{
+  "name": "marp-theme-figure-poc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal Marp proof of concept for theme-aware inline SVG figures",
+  "scripts": {
+    "figures": "python3 figures/generate_error.py",
+    "assets": "node scripts/copy-assets.mjs",
+    "build:index": "node scripts/generate-index.mjs",
+    "build": "npm run build:online",
+    "build:online": "npm run assets && marp slides.md --theme-set themes/base.css --theme-set themes/online.css --theme-set themes/dark-room.css --theme-set themes/bright-room.css --theme online --html --output dist/online.html",
+    "build:dark": "npm run assets && marp slides.md --theme-set themes/base.css --theme-set themes/online.css --theme-set themes/dark-room.css --theme-set themes/bright-room.css --theme dark-room --html --output dist/dark-room.html",
+    "build:bright": "npm run assets && marp slides.md --theme-set themes/base.css --theme-set themes/online.css --theme-set themes/dark-room.css --theme-set themes/bright-room.css --theme bright-room --html --output dist/bright-room.html",
+    "build:all": "npm run build:online && npm run build:dark && npm run build:bright && npm run build:index",
+    "preview": "marp slides.md --theme-set themes/base.css --theme-set themes/online.css --theme-set themes/dark-room.css --theme-set themes/bright-room.css --theme online --html --preview"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "4.2.3"
+  }
+}

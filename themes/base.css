@@ -1,0 +1,34 @@
+/* @theme base */
+@import "default";
+
+section {
+  background: var(--slide-background);
+  color: var(--slide-text);
+  font-family: Inter, Arial, sans-serif;
+}
+
+h1,
+strong {
+  color: var(--accent);
+}
+
+.figure {
+  background: var(--plot-background) !important;
+  display: block;
+  margin: 0 auto;
+  width: 82%;
+}
+
+.figure text {
+  fill: var(--plot-text) !important;
+  font-family: inherit;
+  font-size: var(--plot-text-size) !important;
+}
+
+.theme-name {
+  color: var(--muted-text);
+  font-size: 0.65em;
+  position: absolute;
+  right: 32px;
+  top: 20px;
+}

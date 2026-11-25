@@ -1,0 +1,13 @@
+/* @theme online */
+@import "base";
+
+:root {
+  --slide-background: #f7fbfd;
+  --slide-text: #173042;
+  --accent: #146a82;
+  --muted-text: #607580;
+  --plot-background: #ffffff;
+  --plot-grid: #d7e3e8;
+  --plot-text: #173042;
+  --plot-text-size: 14px;
+}
